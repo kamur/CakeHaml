@@ -1,5 +1,5 @@
 {
-    "name": "k-motoyan/cake-haml",
+    "name": "kamur/cake-haml",
     "description": "haml template engine for cakephp3",
     "keywords": [
         "cakephp",
@@ -7,9 +7,9 @@
         "template"
     ],
     "type": "cakephp-plugin",
-    "homepage": "https://github.com/k-motoyan/CakeHaml",
+    "homepage": "https://github.com/kamur/CakeHaml",
     "require": {
-        "cakephp/cakephp": "3.0.*-dev",
+        "cakephp/cakephp": "3.6.*",
         "cakephp/plugin-installer": "*",
         "mthaml/mthaml": "~1.6.0"
     },
