@@ -33,6 +33,12 @@ Set the default ViewClass on the `src/Controller/AppController.php` file:
   class AppController extends Controller {
 
 +     public $viewClass = 'CakeHaml\\View\\CakeHamlView';
++     public function beforeFilter(Event $event){
++       parent::beforeFilter($event);
++       if($this->request->is('ajax')){
++         $this->setRequest($this->request->withParam('_ext', $this->viewClass));
++       }
++     }
 ```
 
 You can use haml on all your view files with `.haml` extension.
